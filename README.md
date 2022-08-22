@@ -1,5 +1,5 @@
 # final-project-description
-ABSTRACT:
+##ABSTRACT##:
 ________________________________________
 According to the dataset considered, this situation deals with violation of laws and the features related to citations in court from different areas for different people. Most of the times when there is violation of law, the authorities settle it using charges. Few times there are cases where people are charged without commiting any violations or there are cases where people resist the charges for a inevitable reason. so in this work, for a citation, we are going to find if the hearing Status is issued or not meaning we are trying to understand how features of citations are affecting people who face any hearing status and people who don't have one. This helps us to know better about the current mindset of people and the mistakes made by them and in-turn provide a analysis for judistriction for easy flow of their work.
 
@@ -25,7 +25,7 @@ It is observed that the data has columns like
 understanding the basics of the data loaded. To have knowledge of number of columns, number of rows, their statistics, correlations etc. So that we can perform Data pre-processing STEP.
 Here in this process it is found that the data has columns like liencode, violationdate, duedate, agency, etc.It is observed that the violation code section column has got around 190 unique values, The column block has got around 3412 unique values, The columns lot and neighborhood has got around 818,249 unique values respectively.
 
- DATAPREPROCESSING:
+ ##DATAPREPROCESSING##:
 cleaning the data like removing the empty values, removing insignificant columns, removing outliers, encoding the data or filtering high correlation. preparing the data for giving it as input to the algorithm etc.   
 
 1.	The original dataset has 204161 rows and 30 columns
@@ -46,9 +46,9 @@ d.	Now object type of data has to be vectorized. Here we are using label encoder
 8.	Distribution of officer presence requested: This plot shows the information of distribution of violation-code article. From the figure we can observe that the type PM has the highest number of records when compared to the other type.
 This Dist-plot shows the information of distribution of fine amount.it can be observed that most people paid a fine amount in between 0 to 1000.the highest fine amount would be 800
 The pie plot is for citation status it can be observed that the citation status is  Occured for almost all the Citations. Where o stands for-Occured p-passed v-violated a-abscond
-Future engineering:
+##Future engineering##:
 Finding the percentage of missing values and handling them by removing the rows where there are missing values as the percentage of missing values is very less.
-Handling outliers:
+##Handling outliers##:
 •	Finding outliers through different methods and getting rid of them by Using the Isolation Forest algorithm to finalize on the outliers
 After outlier removal using the Isolation Forest
 Handling the object/categorical type of columns
@@ -58,7 +58,8 @@ Setting the Features and Labels:
 2)So as to predict in which instance people can got to that extent for violation charges
 3)If a citation has Hearing or not is only considered.
 In the correlation matrix I have used a high correlation filter and removed all the values with high correlation values.
-Data partitioning: 
+
+##Data partitioning##: 
 As dataset is large. so, we are going with random samples for Training and Testing going with random state '7' as it has more instances in minority class
 
 We are going with random samples for Training and Testing sets.
@@ -83,13 +84,17 @@ Confusion Matrix
 ROC curve
 out of all the above metrics, 'accuracy' helped the most in many cases like Decision tree, Random Forest, Logistic Regression where rest of the metrics like Recall, F1-score, precision were are 100% except for SVM Algorithm. Confusion matrix and ROC curve helped to understand the model better.
 Results
+
 we were able to classify the instances as having a hearing or not having with a very good performance of 99.96+ % even when there were few outliers were left in the data. Random Forest was best and decision tree, Logistic Regression was also performing close to best and SVM had many difficulties in classification as it is sensitive to the outliers.
-Next steps:
+
+##Next steps##:
 1.	we have only considered a sample data from the population. for the complete data the procedure for data pre-processing may change
 2.	all the outliers were not removed, few were left in the dataset. further understanding of the data in better way is possible.
 3.	much better algorithms can be researched on that can handle the outliers like voting classifier.
 4.	research can be done in finding a better representative sample. for training, validation and testing purposes by understanding the distributions of different random sample. And etc.
-references:
+
+
+##references##:
 •	1. https://medium.com/swlh/top-five-methods-to-identify-outliers-in-data-2777a87dd7fe
 •	2. https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf
 
